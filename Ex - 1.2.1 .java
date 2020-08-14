@@ -15,8 +15,8 @@ public class Main {
             points[i] = new Point2D(StdRandom.uniform(0f,1f),StdRandom.uniform(0f,1f));
             //StdDraw.point(points[i].x(),points[i].y());
         }
-        for (int i = 0;i<inputNumber;i++)
-            for (int j = i+1; j<inputNumber-1;j++)
+        for (int i = 0;i<inputNumber-1;i++)
+            for (int j = i+1; j<inputNumber;j++)
                 if (points[i].distanceTo(points[j])<shortestDis)
                     shortestDis = points[i].distanceTo(points[j]);
                 StdOut.println(shortestDis);
